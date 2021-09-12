@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- ICON -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- Font awesome -->
+<script src="https://kit.fontawesome.com/a6baecfa49.js" crossorigin="anonymous"></script> 
+    <title>Admean</title>
+    <link rel="stylesheet" href="css/main.css"
+</head>
+<body class="grey lighten-2">
+    <nav class="pink accent-2">
+    <div class="container">
+        <div class="nav-wrapper">
+            <a href="" class="brand-logo">Admean</a>
+            <!-- sidenav trigger -->
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li class="active"><a href="index.html">Dashborad</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="comments.html">Comments</a></li>
+                <li><a href="users.html">Users</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Sidenav -->
+<ul id="slide-out" class="sidenav">
+    <li>
+        <div class="user-view">
+            <div class="background"><img src="" alt="">
+            </div>
+        </div>
+    </li>
+</ul>
+<!-- Sectionn Stats -->
+<section class="section section-stats center">
+    <div class="row">
+        <div class="col s12 m6 l3">
+            <div class="card-panel pink lighten-4 center">
+                <i class="material-icons medium">face</i>
+                <h5>Monthly Visitor</h5>
+                <h3 class="count">28300</h3>
+                <div class="progress grey lighten-1">
+                    <div class="determinate white" style="width: 40%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3">
+            <div class="card-panel purple lighten-4 center">
+                <i class="material-icons medium">assignment</i>
+                <h5>Posts</h5>
+                <h3 class="count">105</h3>
+                <div class="progress grey lighten-1">
+                    <div class="determinate white" style="width: 40%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3">
+            <div class="card-panel pink lighten-4 center">
+                <i class="material-icons medium">textsms</i>
+                <h5>Comments</h5>
+                <h3 class="count">102</h3>
+                <div class="progress grey lighten-1">
+                    <div class="determinate white" style="width: 40%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3">
+            <div class="card-panel purple lighten-4 center">
+                <i class="material-icons medium">account_circle</i>
+                <h5>Users</h5>
+                <h3 class="count">350</h3>
+                <div class="progress grey lighten-1">
+                    <div class="determinate white" style="width: 40%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Pre loader -->
+<div class="preloader-wrapper big active loader">
+    <div class="spinner-layer spinner-yellow-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+            <!-- jquery cdn  -->
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+   <script> 
+        // Hide function
+        $('.section').hide();
+
+    setTimeout(function() {
+        $(document).ready(function(){
+            // Show Section
+            $('.section').fadeIn();
+            //Hide Loader
+            $('.loader').fadeOut();
+        // Sidenav
+        $('.sidenav').sidenav();
+        // Counter
+        $('.count').each(function() {
+            $(this).prop('Counter',0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function(now){
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+      });
+   
+ }, 300);
+    </script>
+</body>
+</html>
