@@ -19,9 +19,9 @@
         <div class="nav-wrapper">
             <a href="" class="brand-logo">Admean</a>
             <!-- sidenav trigger -->
-            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large right"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li class="active"><a href="index.html">Dashborad</a></li>
+                <li class="active"><a href="index.html">Dashboard</a></li>
                 <li><a href="posts.html">Posts</a></li>
                 <li><a href="categories.html">Categories</a></li>
                 <li><a href="comments.html">Comments</a></li>
@@ -34,10 +34,43 @@
 <ul id="slide-out" class="sidenav">
     <li>
         <div class="user-view">
-            <div class="background"><img src="" alt="">
-            </div>
+            <div class="background">
+                <img src="images/sky.jpg" alt=""></div>
+        <a href="#">
+            <img src="images/1.1.jpg" alt="" class="circle">
+        </a>
+        <a href="#">
+            <span class="name pink-text">Malz Malz</span>
+        </a>
+        <a href="#">
+            <span class="email pink-text">malynne27@gmail.com</span>
+        </a>
         </div>
+        <li>
+            <li class="active"><a href="index.html">
+                <i class="material-icons">poll</i>
+                Dashboard</a></li>
+                <li><a href="posts.html">
+                    <i class="material-icons">note</i>
+                    Posts</a></li>
+                <li><a href="categories.html">
+                    <i class="material-icons">sort</i>
+                    Categories</a></li>
+                <li><a href="comments.html">
+                    <i class="material-icons">list</i>
+                    Comments</a></li>
+                <li><a href="users.html">
+                    <i class="material-icons">sentiment_very_satisfied</i>
+                    Users</a></li>
+        </li>
     </li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li><a href="" class="subheader">Account Controls</a>
+    </li>
+    <li><a href="" class="waves-effect">Logout</a></li>
+    
 </ul>
 <!-- Sectionn Stats -->
 <section class="section section-stats center">
@@ -88,6 +121,227 @@
         </div>
     </div>
 </section>
+
+<!-- Section: Visitor -->
+<section class="section section-visitor purple lighten-3">
+    <div class="row">
+        <div class="col s12 m6 l8">
+            <div class="card-panel">
+                <div id="chartContainer" style="height: 370px; width: 100%;">  
+                </div>
+        </div>
+        </div>
+        <col class="s12 m6 l4">
+        <!-- Latest comments -->
+        <ul class="collection with-header latest-comments">
+            <li class="collection-header">
+               <h5>Latest Comments</h5>
+            </li>
+            <li class="collection-item avatar">
+                <img src="images/smile.jpg" alt="" class="circle">
+                <span class="title">Malz</span>
+                <p class="truncate">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est vitae officiis quo accusantium ipsum numquam perferendis, ex saepe quasi cumque blanditiis minima aspernatur omnis suscipit consequatur aliquid dolorem consequuntur incidunt.</p>
+                <a href="#" class="approve green-text">Approve</a>
+                <a href="#" class="deny red-text">Deny</a>
+            </li>
+            <li class="collection-item avatar">
+                <img src="images/man.jpg" alt="" class="circle">
+                <span class="title">Person 2</span>
+                <p class="truncate">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est vitae officiis quo accusantium ipsum numquam perferendis, ex saepe quasi cumque blanditiis minima aspernatur omnis suscipit consequatur aliquid dolorem consequuntur incidunt.</p>
+                <a href="#" class="approve green-text">Approve</a>
+                <a href="#" class="deny red-text">Deny</a>
+            </li>
+            <li class="collection-item avatar">
+                <img src="images/girl.jpg" alt="" class="circle">
+                <span class="title">Person 3</span>
+                <p class="truncate">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est vitae officiis quo accusantium ipsum numquam perferendis, ex saepe quasi cumque blanditiis minima aspernatur omnis suscipit consequatur aliquid dolorem consequuntur incidunt.</p>
+                <a href="#" class="approve green-text">Approve</a>
+                <a href="#" class="deny red-text">Deny</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- Section: Recent Posts and Todos -->
+<section class="section section-recent">
+    <div class="row">
+        <div class="col s12 m6 l8">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">Recent Post</span>
+                <table class="striped">
+                    <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Post One</td>
+                    <td>Web Design</td>
+                    <td>
+                        <a href="" class="btn purple lighten-2">Details</a>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>Post Two</td>
+                    <td>Web Design</td>
+                    <td>
+                        <a href="" class="btn purple lighten-2">Details</a>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>Post Three</td>
+                    <td>Web Design</td>
+                    <td>
+                        <a href="" class="btn purple lighten-2">Details</a>
+                        
+                    </td>
+                </tr>
+                </tbody>     
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title red-text">Quick To-dos</span>
+            <form id="todo-form">
+              <div class="input-field">
+                <input type="text" id="todo" placeholder="Add Todo">
+              </div>
+              <div class="col s12 m6 l4">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Quick To-dos</span>
+          <form id="todo-form">
+            <div class="input-field">
+              <input type="text" id="todo" placeholder="Add Todo">
+            </div>
+        </form>
+        <ul class="collection todos">
+          <li class="collection-item">
+            <div>To-do One
+              <a href="#!" class="secondary-content delete">
+                <i class="material-icons">close</i>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="section blue-darken-2 white-text center">
+    <p>{Admean panel Copyright &copy;2021}</p>
+</footer>
+
+<!-- Fixed Action Button -->
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large yellow">
+      <i class="large material-icons">add</i>
+    </a>
+    <ul>
+      <li>
+        <a href="#post-modal" class="btn-floating cyan modal-trigger">
+          <i class="material-icons">mode_edit</i>
+        </a>
+      </li>
+      <li>
+        <a href="#category-modal" class="btn-floating blue darken-1 modal-trigger" >
+          <i class="material-icons">folder</i>
+        </a>
+      </li>
+      <li>
+        <a href="#user-modal" class="btn-floating orange modal-trigger">
+          <i class="material-icons">supervisor_account</i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Add Post Modal -->
+<div id="post-modal" class="modal">
+    <div class="modal-content">
+      <h4 class="pink">Add Post</h4>
+      <form>
+        <div class="input-field">
+           <input type="text" id="title">
+           <label for="title">Title</label>
+        </div>
+        <div class="input-field">
+          <select>
+            <option value="" disabled selected>Select Option</option>
+            <option value="1">Web Development</option>
+            <option value="2">Web Design</option>
+            <option value="3">Mobile Development</option>
+            <option value="4">Others</option>
+          </select>
+          <label>Category</label>
+          <div class="input-field">
+            <textarea class="materialize-textarea" name="body"></textarea>
+            <label for="body"></label>
+          </div>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close btn pink accent-1 white-text">Submit</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category Modal -->
+<div id="category-modal" class="modal">
+    <div class="modal-content">
+      <h4>Add Category</h4>
+      <form>
+        <div class="input-field">
+          <input type="text" id="title">
+          <label for="title">Title</label>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <a class="modal-action modal-close btn blue white-text">Submit</a>
+      </div>
+    </div>
+  </div>
+  <!-- User Modal -->
+  <div id="user-modal" class="modal">
+    <div class="modal-content">
+      <h4>Add User</h4>
+      <form>
+        <div class="input-field">
+          <input type="text" id="name">
+          <label for="name">Name</label>
+        </div>
+        <div class="input-field">
+          <input type="email" id="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password">
+          <label for="password">Password</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password2">
+          <label for="password2">Confirm Password</label>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <a class="modal-action modal-close btn blue white-text">Submit</a>
+      </div>
+    </div>
+  </div>
+
+
 <!-- Pre loader -->
 <div class="preloader-wrapper big active loader">
     <div class="spinner-layer spinner-yellow-only">
@@ -101,6 +355,9 @@
     </div>
   </div>
 
+<!-- Canvas Js -->
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  
             <!-- jquery cdn  -->
 <script
 src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -110,6 +367,8 @@ crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
     </script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="js/chart.js"></script>
    <script> 
         // Hide function
         $('.section').hide();
@@ -122,6 +381,15 @@ crossorigin="anonymous"></script>
             $('.loader').fadeOut();
         // Sidenav
         $('.sidenav').sidenav();
+        //Comments Approve or Deny
+        $('.approve').click(function(e) {
+            M.toast({html: 'Comment Approved!'});
+            e.preventDefault();
+        });
+        $('.deny').click(function(e) {
+            M.toast({html: 'Comment Denied!'});
+            e.preventDefault();
+        });
         // Counter
         $('.count').each(function() {
             $(this).prop('Counter',0).animate({
@@ -132,6 +400,7 @@ crossorigin="anonymous"></script>
                 step: function(now){
                     $(this).text(Math.ceil(now));
                 }
+           
             });
         });
       });
